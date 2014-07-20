@@ -1,0 +1,8 @@
+<div><% @items.each do |item|%>
+  <div><%= item.name %></br>
+  <%= item.description %></br>
+  <%= item.start_time %></br>
+  <%= item.end_time %></br></div>
+<% end %></div>
+
+<%= link_to "Add a new item", new_item_path %>

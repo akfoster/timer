@@ -1,0 +1,13 @@
+<%= form_for @item do |f| %>
+  <%= f.label "Item name:" %>
+  <%= f.text_field :name %></br>
+  <%= f.label "Item description:" %>
+  <%= f.text_area :description %></br>
+  <%= f.label "Date for item:" %>
+  <%= f.date_field :start_date %></br>
+  <%= f.label "Start time for item:" %>
+  <%= f.time_field :start_time %></br>
+  <%= f.label "End time for item:" %>
+  <%= f.time_field :end_time %></br>
+  <%= f.submit "Create item" %>
+<% end %>
